@@ -65,4 +65,9 @@ public class EmpDAOImpl implements EmpDAO {
 		return result;
 	}
 
+	@Override
+	public LoginDTO findbyId(String id) {
+		return sqlSession.selectOne("ktds.erp.emp.securityLogin",id);
+	}
+
 }

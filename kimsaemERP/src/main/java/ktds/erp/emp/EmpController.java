@@ -40,7 +40,7 @@ public class EmpController {
 		// 2. 저장될 위치
 		String path = WebUtils.getRealPath(req.getSession().getServletContext(), "/WEB-INF/upload");
 		String fileName = file.getOriginalFilename();
-		System.out.println("컨틀롤러=>" + emp.getSsn().substring(6, 7));
+		System.out.println("컨트롤러=>" + emp.getSsn().substring(6, 7));
 		emp.setGender(emp.getSsn().substring(6, 7));
 		emp.setProfile_photo(fileName);
 		if (emp.getMarry() == null) {// 체크박스를 선택하지 않은 미혼이라는 의미

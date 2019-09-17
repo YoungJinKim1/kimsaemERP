@@ -12,6 +12,8 @@ public interface EmpDAO {
 	int update(MemberDTO user);
 	LoginDTO login(MemberDTO loginUser);
 	boolean idCheck(String id);
+	LoginDTO findbyId(String id);
+	
 }
 
 
